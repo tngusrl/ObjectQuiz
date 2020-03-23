@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/TimeCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="문제를 맞춰보세요!" />
+
+    <TextView
+        android:id="@+id/Quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="fitXY" />
+
+
+    <SeekBar
+        android:id="@+id/sk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/QuizCount"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="문제수 입력"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/QuizTimeCount"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="문제 제한시간 입력(초)"
+                android:inputType="number" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Answer"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="90dp" />
+
+</LinearLayout>
